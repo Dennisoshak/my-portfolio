@@ -11,7 +11,7 @@
 
 <br /><br />
 
-# Installation :arrow_down:
+# Installation :
 
 ### You will need to download Git and Node to run this project
 
@@ -29,7 +29,7 @@ git --version
 
 <br />
 
-# Getting Started :dart:
+# Getting Started :
 
 ### Fork or Clone the repo
 
@@ -72,7 +72,7 @@ yarn start
 
 <br />
 
-# SEO :spider:
+# SEO :
 
 ### Search engine optimization (SEO) is the process of improving the quality and quantity of website traffic to a website or a web page from search engines.
 
@@ -111,7 +111,7 @@ yarn start
 
 <br />
 
-# Packages Used :package:
+# Packages Used :
 
 |  Client Side Packages  |
 | :--------------------: |
@@ -130,13 +130,13 @@ yarn start
 
 <br />
 
-# APIs Used :world_map:
+# APIs Used ::
 
 - [SheetDB](https://sheetdb.io/)
 
 <br />
 
-# Fonts and Images :performing_arts:
+# Fonts and Images :
 
 ## Illustrations
 
