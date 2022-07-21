@@ -7,6 +7,7 @@ export const skillsData = [
   "MongoDB",
   "MySQL",
   "Git",
+  "Typescript",
 ];
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.
