@@ -40,7 +40,7 @@ git --version
 
 ```
 git clone hhttps://github.com/<YOUR GITHUB USERNAME>/developer-portfolio.git
-cd developer-portfolio
+cd my-portfolio
 ```
 
 ### Install packages from the root directory
