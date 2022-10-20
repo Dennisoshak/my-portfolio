@@ -28,9 +28,10 @@ function Main() {
       <Navbar />
       <Landing />
       <About />
-      <Education />
       <Skills />
       <Experience />
+      <Education />
+
       <Projects />
       {/* <Achievement /> */}
       {/* <Services /> */}
