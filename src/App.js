@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className="app">
-      <Router>
+      <Router basename={"https://dennisoshak.github.io/my-portfolio"}>
         <ScrollToTop />
         <Switch>
           <Route path="/" exact component={Main} />
