@@ -25,7 +25,7 @@ export const projectsData = [
       "A Simple E-commerce application using PayPal as the payment method",
     tags: ["React", "NodeJS", "MongoDB"],
     code: "https://github.com/Dennisoshak/eCommerce-app",
-    demo: "https://github.com/Dennisoshak/eCommerce-app",
+    demo: "https://madshopapp.herokuapp.com/",
     image: five,
   },
   // {
