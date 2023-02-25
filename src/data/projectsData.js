@@ -3,6 +3,7 @@ import ten from "../assets/svg/projects/ten.svg";
 // import three from "../assets/svg/projects/three.svg";
 // import four from "../assets/svg/projects/four.svg";
 import five from "../assets/svg/projects/five.svg";
+import sample from "../assets/svg/projects/sample.svg";
 // import six from "../assets/svg/projects/six.svg";
 // import seven from "../assets/svg/projects/seven.svg";
 // import eight from "../assets/svg/projects/eight.svg";
@@ -22,21 +23,22 @@ export const projectsData = [
     id: 2,
     projectName: "E-Commerce app",
     projectDesc:
-      "A Simple E-commerce application using PayPal as the payment method",
-    tags: ["React", "NodeJS", "MongoDB"],
+      "A Simple E-commerce application using a Credit Card as the payment method",
+    tags: ["React", "Redx", "NodeJS", "MongoDB"],
     code: "https://github.com/Dennisoshak/eCommerce-app",
     demo: "https://madshopapp.herokuapp.com/",
     image: five,
   },
-  // {
-  //     id: 3,
-  //     projectName: 'Weather App',
-  //     projectDesc: 'Weather forecast systems and applications predict weather conditions based on multiple parameters.',
-  //     tags: ['Django', 'CSS', 'Material Ui'],
-  //     code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-  //     demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-  //     image: three
-  // },
+  {
+    id: 3,
+    projectName: "Gita App",
+    projectDesc:
+      "A responsive web application serving a psychotherapist who uses a CBT techniques.",
+    tags: ["React", "Redux", "NodeJS", "Express", "MongoDB"],
+    code: "https://github.com/Dennisoshak/Gita-therapy",
+    demo: "https://github.com/Dennisoshak/Gita-therapy",
+    image: sample,
+  },
   // {
   //     id: 4,
   //     projectName: 'Android Patient Tracker',
