@@ -14,7 +14,7 @@ import ScrollToTop from "./utils/ScrollToTop";
 import "./App.css";
 
 function App() {
-  const { theme } = useContext(ThemeContext);
+  // const { theme } = useContext(ThemeContext);
 
   console.log = console.warn = console.error = () => {};
 
