@@ -20,7 +20,6 @@ export const skillsData = [
     JS 
     React
     Next JS
-    Nuxt JS
     Node JS
     Vue
     Angular
