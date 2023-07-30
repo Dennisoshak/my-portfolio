@@ -23,8 +23,8 @@ export const projectsData = [
     id: 2,
     projectName: "E-Commerce app",
     projectDesc:
-      "A Simple E-commerce application using a Credit Card as the payment method",
-    tags: ["React", "Redx", "NodeJS", "MongoDB"],
+      "An E-commerce application using a Credit Card as the payment method",
+    tags: ["React", "Redux", "NodeJS", "MongoDB"],
     code: "https://github.com/Dennisoshak/eCommerce-app",
     demo: "https://madshopapp.herokuapp.com/",
     image: five,
@@ -33,10 +33,10 @@ export const projectsData = [
     id: 3,
     projectName: "Gita App",
     projectDesc:
-      "A responsive web application serving a psychotherapist who uses a CBT techniques.",
+      "A responsive web application serving a psychotherapist who uses  CBT techniques.",
     tags: ["React", "Redux", "NodeJS", "Express", "MongoDB"],
     code: "https://github.com/Dennisoshak/Gita-therapy",
-    demo: "https://github.com/Dennisoshak/Gita-therapy",
+    demo: "https://gita-therapy-b0a2a6fa493f.herokuapp.com/",
     image: sample,
   },
   // {

@@ -1,10 +1,9 @@
 export const experienceData = [
-    {
-        id: 1,
-        company: 'Bridgify',
-        jobtitle: 'Frontend Developer',
-        startYear: 'June 2022',
-        endYear: "current"
-    },
-  
-]
+  {
+    id: 1,
+    company: "Bridgify",
+    jobtitle: "Frontend Developer",
+    startYear: "2022",
+    endYear: "2023",
+  },
+];

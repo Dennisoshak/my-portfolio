@@ -16,8 +16,6 @@ import "./App.css";
 function App() {
   // const { theme } = useContext(ThemeContext);
 
-  console.log = console.warn = console.error = () => {};
-
   return (
     <div className="app">
       <Router basename={"/my-portfolio"}>
