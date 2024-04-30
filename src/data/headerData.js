@@ -1,5 +1,5 @@
-import resume from "../assets/pdf/CV Dennis Goldberg.pdf";
 import profileImage from "../assets/Dennis.jpg";
+import resume from "../assets/pdf/CV_Dennis_Goldberg.pdf";
 
 export const headerData = {
   name: "Dennis Goldberg",
