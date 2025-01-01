@@ -1,7 +1,6 @@
-import React, { useContext, useState } from "react";
+import React, { useRef, useContext, useState } from "react";
 import { Snackbar, IconButton, SnackbarContent } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
-import axios from "axios";
 import isEmail from "validator/lib/isEmail";
 import { makeStyles } from "@material-ui/core/styles";
 import {
@@ -20,14 +19,14 @@ import {
 import { AiOutlineSend, AiOutlineCheckCircle } from "react-icons/ai";
 import { FiPhone, FiAtSign } from "react-icons/fi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
-
 import { ThemeContext } from "../../contexts/ThemeContext";
-
 import { socialsData } from "../../data/socialsData";
 import { contactsData } from "../../data/contactsData";
+import emailjs from "@emailjs/browser";
 import "./Contacts.css";
 
 function Contacts() {
+  const formRef = useRef(null);
   const [open, setOpen] = useState(false);
 
   const [name, setName] = useState("");
@@ -131,25 +130,29 @@ function Contacts() {
 
   const handleContactForm = (e) => {
     e.preventDefault();
-
+    console.log(formRef.current);
     if (name && email && message) {
       if (isEmail(email)) {
-        const responseData = {
-          name: name,
-          email: email,
-          message: message,
+        const template_params = {
+          from_name: name,
+          from_email: email,
+          message,
         };
+        const { publicKey, serviceId, templateId } = contactsData;
+        emailjs
+          .send(serviceId, templateId, template_params, {
+            publicKey,
+          })
+          .then((res) => {
+            console.log("success");
+            setSuccess(true);
+            setErrMsg("");
 
-        axios.post(contactsData.sheetAPI, responseData).then((res) => {
-          console.log("success");
-          setSuccess(true);
-          setErrMsg("");
-
-          setName("");
-          setEmail("");
-          setMessage("");
-          setOpen(false);
-        });
+            setName("");
+            setEmail("");
+            setMessage("");
+            setOpen(false);
+          });
       } else {
         setErrMsg("Invalid email");
         setOpen(true);
@@ -164,12 +167,13 @@ function Contacts() {
     <div
       className="contacts"
       id="contacts"
-      style={{ backgroundColor: contactsTheme.secondary }}>
+      style={{ backgroundColor: contactsTheme.secondary }}
+    >
       <div className="contacts--container">
         <h1 style={{ color: contactsTheme.primary }}>Contacts</h1>
         <div className="contacts-body">
           <div className="contacts-form">
-            <form onSubmit={handleContactForm}>
+            <form ref={formRef} id="contacts-form" onSubmit={handleContactForm}>
               <div className="input-container">
                 <label htmlFor="Name" className={classes.label}>
                   Name
@@ -179,7 +183,7 @@ function Contacts() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   type="text"
-                  name="Name"
+                  name="from_name"
                   className={`form-input ${classes.input}`}
                 />
               </div>
@@ -192,7 +196,7 @@ function Contacts() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   type="email"
-                  name="Email"
+                  name="from_email"
                   className={`form-input ${classes.input}`}
                 />
               </div>
@@ -205,7 +209,7 @@ function Contacts() {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   type="text"
-                  name="Message"
+                  name="message"
                   className={`form-message ${classes.message}`}
                 />
               </div>
@@ -241,7 +245,8 @@ function Contacts() {
               }}
               open={open}
               autoHideDuration={4000}
-              onClose={handleClose}>
+              onClose={handleClose}
+            >
               <SnackbarContent
                 action={
                   <React.Fragment>
@@ -249,7 +254,8 @@ function Contacts() {
                       size="small"
                       aria-label="close"
                       color="inherit"
-                      onClick={handleClose}>
+                      onClick={handleClose}
+                    >
                       <CloseIcon fontSize="small" />
                     </IconButton>
                   </React.Fragment>
@@ -267,7 +273,8 @@ function Contacts() {
           <div className="contacts-details">
             <a
               href={`mailto:${contactsData.email}`}
-              className="personal-details">
+              className="personal-details"
+            >
               <div className={classes.detailsIcon}>
                 <FiAtSign />
               </div>
@@ -298,7 +305,8 @@ function Contacts() {
                   href={socialsData.facebook}
                   target="_blank"
                   rel="noreferrer"
-                  className={classes.socialIcon}>
+                  className={classes.socialIcon}
+                >
                   <FaFacebook aria-label="Facebook" />
                 </a>
               )}
@@ -307,7 +315,8 @@ function Contacts() {
                   href={socialsData.github}
                   target="_blank"
                   rel="noreferrer"
-                  className={classes.socialIcon}>
+                  className={classes.socialIcon}
+                >
                   <FaGithub aria-label="GitHub" />
                 </a>
               )}
@@ -316,7 +325,8 @@ function Contacts() {
                   href={socialsData.linkedIn}
                   target="_blank"
                   rel="noreferrer"
-                  className={classes.socialIcon}>
+                  className={classes.socialIcon}
+                >
                   <FaLinkedinIn aria-label="LinkedIn" />
                 </a>
               )}
@@ -325,7 +335,8 @@ function Contacts() {
                   href={socialsData.instagram}
                   target="_blank"
                   rel="noreferrer"
-                  className={classes.socialIcon}>
+                  className={classes.socialIcon}
+                >
                   <FaInstagram aria-label="Instagram" />
                 </a>
               )}
@@ -334,7 +345,8 @@ function Contacts() {
                   href={socialsData.medium}
                   target="_blank"
                   rel="noreferrer"
-                  className={classes.socialIcon}>
+                  className={classes.socialIcon}
+                >
                   <FaMediumM aria-label="Medium" />
                 </a>
               )}
@@ -343,7 +355,8 @@ function Contacts() {
                   href={socialsData.blogger}
                   target="_blank"
                   rel="noreferrer"
-                  className={classes.socialIcon}>
+                  className={classes.socialIcon}
+                >
                   <FaBloggerB aria-label="Blogger" />
                 </a>
               )}
@@ -352,7 +365,8 @@ function Contacts() {
                   href={socialsData.youtube}
                   target="_blank"
                   rel="noreferrer"
-                  className={classes.socialIcon}>
+                  className={classes.socialIcon}
+                >
                   <FaYoutube aria-label="YouTube" />
                 </a>
               )}
@@ -361,7 +375,8 @@ function Contacts() {
                   href={socialsData.reddit}
                   target="_blank"
                   rel="noreferrer"
-                  className={classes.socialIcon}>
+                  className={classes.socialIcon}
+                >
                   <FaRedditAlien aria-label="Reddit" />
                 </a>
               )}
@@ -370,7 +385,8 @@ function Contacts() {
                   href={socialsData.stackOverflow}
                   target="_blank"
                   rel="noreferrer"
-                  className={classes.socialIcon}>
+                  className={classes.socialIcon}
+                >
                   <FaStackOverflow aria-label="Stack Overflow" />
                 </a>
               )}
@@ -379,7 +395,8 @@ function Contacts() {
                   href={socialsData.codepen}
                   target="_blank"
                   rel="noreferrer"
-                  className={classes.socialIcon}>
+                  className={classes.socialIcon}
+                >
                   <FaCodepen aria-label="CodePen" />
                 </a>
               )}
@@ -388,7 +405,8 @@ function Contacts() {
                   href={socialsData.gitlab}
                   target="_blank"
                   rel="noreferrer"
-                  className={classes.socialIcon}>
+                  className={classes.socialIcon}
+                >
                   <FaGitlab aria-label="GitLab" />
                 </a>
               )}
