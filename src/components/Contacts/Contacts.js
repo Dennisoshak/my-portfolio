@@ -1,4 +1,4 @@
-import React, { useRef, useContext, useState } from "react";
+import React, { useRef, useContext, useState, useEffect } from "react";
 import { Snackbar, IconButton, SnackbarContent } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
 import isEmail from "validator/lib/isEmail";
@@ -45,6 +45,12 @@ function Contacts() {
 
     setOpen(false);
   };
+
+  useEffect(() => {
+    const t = setTimeout(() => {
+      setSuccess(() => false);
+    }, 5000);
+  }, [success]);
 
   const useStyles = makeStyles((t) => ({
     input: {
