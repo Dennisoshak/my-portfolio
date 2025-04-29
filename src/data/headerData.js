@@ -1,4 +1,4 @@
-import profileImage from "../assets/Dennis.jpg";
+import profileImage from "../assets/png/Dennis.png";
 import resume from "../assets/pdf/CV_Dennis_Goldberg.pdf";
 
 export const headerData = {
