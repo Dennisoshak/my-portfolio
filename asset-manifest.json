@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.025ece8c.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.fcd49e76.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.fcd49e76.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.5c995750.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.e9572752.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.e9572752.chunk.js.map",
     "runtime-main.js": "/my-portfolio/static/js/runtime-main.ad6ac5b7.js",
     "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.ad6ac5b7.js.map",
     "static/css/2.0f4ceb2f.chunk.css": "/my-portfolio/static/css/2.0f4ceb2f.chunk.css",
@@ -10,11 +10,11 @@
     "static/js/2.b2775b0e.chunk.js.map": "/my-portfolio/static/js/2.b2775b0e.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
     "static/css/2.0f4ceb2f.chunk.css.map": "/my-portfolio/static/css/2.0f4ceb2f.chunk.css.map",
-    "static/css/main.025ece8c.chunk.css.map": "/my-portfolio/static/css/main.025ece8c.chunk.css.map",
+    "static/css/main.5c995750.chunk.css.map": "/my-portfolio/static/css/main.5c995750.chunk.css.map",
     "static/js/2.b2775b0e.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.b2775b0e.chunk.js.LICENSE.txt",
     "static/media/index.css": "/my-portfolio/static/media/BestermindRegular.e58a1922.ttf",
-    "static/media/CV_Dennis_Goldberg.3aac281b.pdf": "/my-portfolio/static/media/CV_Dennis_Goldberg.3aac281b.pdf",
-    "static/media/Dennis.05ed44e5.jpg": "/my-portfolio/static/media/Dennis.05ed44e5.jpg",
+    "static/media/Denis_Goldberg_CV.54d6e046.pdf": "/my-portfolio/static/media/Denis_Goldberg_CV.54d6e046.pdf",
+    "static/media/Dennis.5e0c4de3.png": "/my-portfolio/static/media/Dennis.5e0c4de3.png",
     "static/media/angular.8f069a35.svg": "/my-portfolio/static/media/angular.8f069a35.svg",
     "static/media/azure.4993a0d8.svg": "/my-portfolio/static/media/azure.4993a0d8.svg",
     "static/media/blender.5c8d639d.svg": "/my-portfolio/static/media/blender.5c8d639d.svg",
@@ -146,7 +146,7 @@
     "static/js/runtime-main.ad6ac5b7.js",
     "static/css/2.0f4ceb2f.chunk.css",
     "static/js/2.b2775b0e.chunk.js",
-    "static/css/main.025ece8c.chunk.css",
-    "static/js/main.fcd49e76.chunk.js"
+    "static/css/main.5c995750.chunk.css",
+    "static/js/main.e9572752.chunk.js"
   ]
 }
