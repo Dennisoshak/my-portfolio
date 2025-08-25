@@ -11,6 +11,6 @@ export const experienceData = [
     company: "Realcommerce",
     jobtitle: "Frontend Developer",
     startYear: "2023",
-    endYear: "Present",
+    endYear: "2025",
   },
 ];
