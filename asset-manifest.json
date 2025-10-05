@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.facdaf33.css",
-    "main.js": "/my-portfolio/static/js/main.4af0db96.js",
+    "main.js": "/my-portfolio/static/js/main.8d7e1cce.js",
     "static/media/placeholder.png": "/my-portfolio/static/media/placeholder.3fcbbdcd05f3e458d129.png",
     "static/media/expOrange.svg": "/my-portfolio/static/media/expOrange.9383b2df918bf4e0ce67e3f289602562.svg",
     "static/media/expGreen.svg": "/my-portfolio/static/media/expGreen.dffa1cc66a55ae11be49b61753f4c221.svg",
@@ -15,7 +15,7 @@
     "static/media/redux.png": "/my-portfolio/static/media/redux.1b4bb5fceb01b19da59d.png",
     "static/media/five.svg": "/my-portfolio/static/media/five.89b924ebc79f37d920813b8e786786ba.svg",
     "static/media/BestermindRegular.ttf": "/my-portfolio/static/media/BestermindRegular.e58a192233afb30a6a59.ttf",
-    "static/media/CV Dennis Goldberg.pdf": "/my-portfolio/static/media/CV Dennis Goldberg.d88942bc79c96dced7a7.pdf",
+    "static/media/CV_Dennis_Goldberg.pdf": "/my-portfolio/static/media/CV_Dennis_Goldberg.9bd151c7b19dcff1d2f9.pdf",
     "static/media/sample.svg": "/my-portfolio/static/media/sample.4f39bbbf5bfd6f0ddcadd8b4212b1d71.svg",
     "static/media/ten.svg": "/my-portfolio/static/media/ten.2fbc22ae5edd172157bf8cf906cc184b.svg",
     "static/media/contactsBlack.svg": "/my-portfolio/static/media/contactsBlack.888fb5429daafbdcf2e79d16adf73902.svg",
@@ -136,10 +136,10 @@
     "static/media/vuetifyjs.svg": "/my-portfolio/static/media/vuetifyjs.8a22a3ec81ad62e97094feab6e7ee0fb.svg",
     "static/media/bulma.svg": "/my-portfolio/static/media/bulma.5910d4416e077262d0264109649ab214.svg",
     "main.facdaf33.css.map": "/my-portfolio/static/css/main.facdaf33.css.map",
-    "main.4af0db96.js.map": "/my-portfolio/static/js/main.4af0db96.js.map"
+    "main.8d7e1cce.js.map": "/my-portfolio/static/js/main.8d7e1cce.js.map"
   },
   "entrypoints": [
     "static/css/main.facdaf33.css",
-    "static/js/main.4af0db96.js"
+    "static/js/main.8d7e1cce.js"
   ]
 }
